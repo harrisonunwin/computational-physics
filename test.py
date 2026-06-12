@@ -24,3 +24,21 @@ print("The updated value of x is",x)
 #We can swap variables
 x,y = y,x
 print("Now we have swapped the value of x and y, so x =",x,"and y =",y)
+
+#Ball drop
+from math import sqrt, pi
+height = float(input("Please enter your height in meters:"))
+g = 9.81
+time = sqrt(2*height/g)
+print(f"The time it takes for the ball to reach the ground is: {time}")
+
+
+#Altitude for orbit with time period T
+
+G = 6.67e-11
+M = 5.97e24
+R = 6.371e6
+T = float(input("Please enter the time period your orbit in seconds:"))
+h = (G*M*T**2/(4*pi**2))**(1/3) - R
+print(f"The height of your obit is: {h}")
+
