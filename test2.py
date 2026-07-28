@@ -1,5 +1,6 @@
-from numpy import zeros
+#How to load text files
 
-a = zeros([2,2]),int
+from numpy import loadtxt
 
+a = loadtxt("values.txt", float, delimiter=" ")
 print(a)
