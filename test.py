@@ -20,21 +20,23 @@ a2 = 18.3
 a3 = 0.714
 a4 = 23.2
 
-A = float(input("Enter the mass number:"))
-Z = float(input("Enter the atomic number:"))
+Z = int(input("Enter the atomic number:"))
+A = range(Z,3*Z+1)
 
-if A%2 != 0:
-    a5 = 0.0
 
-elif Z%2 == 0:
-    a5 = 12.0
+for A in range(Z,3*Z+1):
+    if A%2 != 0:
+        a5 = 0.0
 
-else:
-    a5 = -12.0
+    elif Z%2 == 0:
+        a5 = 12.0
 
-B = a1*A - a2*A**(2/3) - (a3*Z**2)/A**(1/3) -(a4*(A-2*Z)**2)/A + a5/A**(1/2)
+    else:
+        a5 = -12.0
 
-print("The binding energy is",B,"MeV")
+    B = a1*A - a2*A**(2/3) - (a3*Z**2)/A**(1/3) -(a4*(A-2*Z)**2)/A + a5/A**(1/2)
+
+    print("The binding energy per nucleon for mass number of",A," is",B/A,"MeV")
 
 
 
