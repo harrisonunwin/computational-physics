@@ -51,5 +51,12 @@ for A in range(Z,3*Z+1):
 print("The most stable binding energy is",stable_B_per_nucleon,"MeV, and has a mass number of",stable_A)
 
 
+#Cannot test equality of floats due to accuracy, instead do this:
 
+epsilon = 1e-12
+if abs(x-3.3)<epsilon:
+    print(x)
+
+
+#Be careful when subtracting number of similar size. Answer may be truncated. 
 
