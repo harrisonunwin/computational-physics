@@ -1,5 +1,6 @@
 from numpy import loadtxt
 from numpy import trapezoid
+
 data = loadtxt("velocities.txt", delimiter="\t")
 
 xdata = data[:,0] #time data
