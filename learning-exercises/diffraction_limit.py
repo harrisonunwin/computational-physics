@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def J(m,x):
-    N = 1000
+    N = 10     #Initial value of steps
     a = 0
     b = np.pi
     h = (b - a) / N
