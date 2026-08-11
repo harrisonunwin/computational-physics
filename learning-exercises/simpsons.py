@@ -7,10 +7,9 @@ def f(x):
 
 def integral():
 
-    N = 100  # initial step count
+    N = 1  # initial step count
     a = 0
     b = 2
-
     delta = 1e-10   #desired error
 
     def simpson(N):
