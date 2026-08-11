@@ -1,7 +1,19 @@
 from random import randrange
 
-z = randrange(1,7)
-print("The first dice roll is:",z)
+N = 1000000
+double = 0
 
-x = randrange(1,7)
-print("The second dice roll is:",x)
+for i in range(1,N+1):
+    z = randrange(1,7)
+    x = randrange(1, 7)
+
+    if z == x == 6:
+        double += 1
+
+print("A double six was rolled",double,"times")
+print("The fraction of times a double six was rolled is",double/N)   #converges to roughly 1/36
+
+
+
+
+
