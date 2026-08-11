@@ -1,5 +1,3 @@
-from scipy.integrate import simpson as scipy_simpson
-from numpy import linspace
 
 def f(x):
     return x**4 - 2*x +1
