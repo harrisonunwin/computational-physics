@@ -1,4 +1,4 @@
-# Computational Physics Summer Project
+# Computational Physics Project
 
 Working through Mark Newman's *Computational Physics* textbook, building up
 numerical methods in Python.
