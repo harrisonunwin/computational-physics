@@ -36,7 +36,11 @@ for t in points_time:
     N_Pb += decay_Pb
 
 #Plot the graph
-plt.plot(points_time,points_Pb)
-plt.plot(points_time,points_Bi)
-plt.plot(points_time,points_Tl)
+plt.plot(points_time, points_Bi, label='Bi-213')
+plt.plot(points_time, points_Tl, label='Tl-209')
+plt.plot(points_time, points_Pb, label='Pb-209')
+plt.xlabel('Time (s)')
+plt.ylabel('Number of atoms')
+plt.title('Radioactive Decay Chain: Bi-213 → Tl-209/Pb-209')
+plt.legend()
 plt.show()
