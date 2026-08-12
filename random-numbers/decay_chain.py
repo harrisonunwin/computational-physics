@@ -8,7 +8,7 @@ N_Pb = 0
 tau_Bi = 132  #half-life of Bi-213 in seconds
 dt = 1.0
 p = 1 - 2**(-dt/tau_Bi)     #Probability of decay in one time interval
-tmax = 1000       #maximum time
+tmax = 1000         #maximum time
 
 
 points_time = arange(0,tmax,dt)
