@@ -9,6 +9,7 @@ i = j = L//2        #start points in centre of grid
 i_steps, j_steps = [i], [j]
 
 
+#Makes particle move in random x or y direction whilst being contained in the LxL grid
 for s in range(steps):
 
     if random() < 0.5:
@@ -42,6 +43,8 @@ ax.grid(True, linestyle='--', alpha=0.4)
 trail, = ax.plot([], [], linewidth=0.5)       # the path so far
 point, = ax.plot([], [], 'ro')
 
+
+#animation
 def update(frame):
     trail.set_data(i_steps[:frame+1], j_steps[:frame+1])
     point.set_data([i_steps[frame]], [j_steps[frame]])
